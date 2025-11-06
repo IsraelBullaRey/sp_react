@@ -26,7 +26,8 @@ export default function Home() {
   }, []);
 
   useEffect(() => {  //No pude realizarlo con un método, investigue un poquito en una documentacion sobre useEffect de que podia simular funciones
-  let resultado = [...products]; //hacer una copia limpia de los productos originales para no dañarlos
+  let resultado = [...products]; //hacer una copia limpia de los productos originales para no dañarlos, copiado de un repo mio solo que use en ese const
+  //aca con let ya que es necesario que cambie con el tiempo
 
   if (searchText.trim()) { //buscar, si hay algo en el e.target.value
     resultado = resultado.filter((p) =>
