@@ -47,8 +47,8 @@ export default function Home() {
     resultado = resultado.filter((p) => p.category === category); //buscar por categoria
   }
 
-  setFiltrado(resultado);
-}, [products, searchText, category, sortBy]);
+  setFiltrado(resultado);//enviar el resultado de todo el filtrado a filtros
+}, [products, searchText, category, sortBy]); //esto es propio de useEffect, las variables que son ingresadas como parámetros
 
   return (
     <div className="min-h-screen bg-background">
